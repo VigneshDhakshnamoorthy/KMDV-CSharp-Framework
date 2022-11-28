@@ -6,8 +6,8 @@ namespace KMDVFramework.TestCases.Dominos
 {
     public class DominosAddRemove : TestBase
     {
-      
-        
+
+        [Test]
         [Author("VigneshDhakshnamoorthy")]
         public void AddRemoveE2E()
         {
