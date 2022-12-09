@@ -20,12 +20,12 @@ namespace KMDVFramework.Utils
 
                 MailMessage newMail = new MailMessage()
                 {
-                    From = new MailAddress(UserNameCES, SenderName),
+                    From = new MailAddress(UserName, SenderName),
                     Subject = "Mail From C#",
                     IsBodyHtml = true,
                     Body = "<p><u><strong>Hello Everyone,</strong></u></p>\r\n\r\n<p>Here I Enclosed Test Report ( Some Time )</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><em>Thanks &amp; Regards</em><em> </em></p>\r\n\r\n<p><em><strong>Vignesh D</strong></em></p>\r\n"
                 };
-                client.Credentials = new System.Net.NetworkCredential(UserNameCES, UserPasswordCES);
+                client.Credentials = new System.Net.NetworkCredential(UserName, UserPassword);
                // Attachment item = new Attachment(ExtentReportPath);
                // newMail.Attachments.Add(item);
                 newMail.To.Add(RecipientMail);
